@@ -2,8 +2,8 @@
 %define		_class		Mail
 %define		_subclass	Mime
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - classes to create and decode mime messages
-Summary(pl):	%{_class}_%{_subclass} - klasa do tworzenia i dekodowania wiadomo¶ci mime
+Summary:	%{_pearname} - classes to create and decode mime messages
+Summary(pl):	%{_pearname} - klasa do tworzenia i dekodowania wiadomo¶ci mime
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
 Release:	1
