@@ -1,7 +1,9 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Mail
 %define		_subclass	Mime
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - classes to create and decode mime messages
 Summary(pl):	%{_pearname} - klasa do tworzenia i dekodowania wiadomo¶ci mime
 Name:		php-pear-%{_pearname}
@@ -9,8 +11,8 @@ Version:	1.2.1
 Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	667f631d9b128ef559bf97b9cd182c48
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	667f631d9b128ef559bf97b9cd182c48
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -29,6 +31,8 @@ messages:
 - xmail.xsl: An XSLT stylesheet to transform the output of the
   getXML() method.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Dostarcza klasy do tworzenia oraz manipulowania wiadomo¶ciami mime:
 - mime.php: tworzenie emaili mime, z htmlem, za³±cznikami, obrazkami,
@@ -37,6 +41,8 @@ Dostarcza klasy do tworzenia oraz manipulowania wiadomo¶ciami mime:
 - mimeDecode.php: dekoduje wiadomo¶ci mime do u¿ywalnej struktury.
 - xmail.dtd: XML DTD dla metody getXML() klasy dekoduj±cej.
 - xmail.xsl: styl XSLT do transformowania wyj¶cia metody getXML().
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
