@@ -5,7 +5,7 @@
 Summary:	%{_class}_%{_subclass} - classes to create and decode mime messages
 Summary(pl):	%{_class}_%{_subclass} - klasa do tworzenia i dekodowania wiadomo¶ci mime
 Name:		php-pear-%{_pearname}
-Version:	1.2
+Version:	1.2.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
