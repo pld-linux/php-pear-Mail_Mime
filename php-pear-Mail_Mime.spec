@@ -16,6 +16,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
+Requires: php-pcre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
