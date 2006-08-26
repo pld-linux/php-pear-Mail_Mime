@@ -22,7 +22,6 @@
          }
      }
  
-diff -bur Mail_Mime-1.3.1.orig/usr/share/pear/Mail/mime.php Mail_Mime-1.3.1/usr/share/pear/Mail/mime.php
 --- Mail_Mime-1.3.1.orig/usr/share/pear/Mail/mime.php	2006-08-25 18:36:36.000000000 +0200
 +++ Mail_Mime-1.3.1/usr/share/pear/Mail/mime.php	2006-08-25 18:37:44.000000000 +0200
 @@ -354,7 +354,8 @@
@@ -45,4 +44,3 @@ diff -bur Mail_Mime-1.3.1.orig/usr/share/pear/Mail/mime.php Mail_Mime-1.3.1/usr/
      }
  
      /**
-Tylko w Mail_Mime-1.3.1/usr/share/pear/Mail: mime.php~
