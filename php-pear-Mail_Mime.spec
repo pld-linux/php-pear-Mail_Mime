@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - classes to create and decode mime messages
-Summary(pl):	%{_pearname} - klasa do tworzenia i dekodowania wiadomo∂ci mime
+Summary(pl.UTF-8):   %{_pearname} - klasa do tworzenia i dekodowania wiadomo≈õci mime
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
 Release:	5
@@ -36,14 +36,14 @@ messages:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Dostarcza klasy do tworzenia oraz manipulowania wiadomo∂ciami mime:
-- mime.php: tworzenie emaili mime, z htmlem, za≥±cznikami, obrazkami,
+%description -l pl.UTF-8
+Dostarcza klasy do tworzenia oraz manipulowania wiadomo≈õciami mime:
+- mime.php: tworzenie emaili mime, z htmlem, za≈ÇƒÖcznikami, obrazkami,
   etc.
-- mimePart.php: zaawansowane metody tworzenia wiadomo∂ci mime.
-- mimeDecode.php: dekoduje wiadomo∂ci mime do uøywalnej struktury.
-- xmail.dtd: XML DTD dla metody getXML() klasy dekoduj±cej.
-- xmail.xsl: styl XSLT do transformowania wyj∂cia metody getXML().
+- mimePart.php: zaawansowane metody tworzenia wiadomo≈õci mime.
+- mimeDecode.php: dekoduje wiadomo≈õci mime do u≈ºywalnej struktury.
+- xmail.dtd: XML DTD dla metody getXML() klasy dekodujƒÖcej.
+- xmail.xsl: styl XSLT do transformowania wyj≈õcia metody getXML().
 
 Ta klasa ma w PEAR status: %{_status}.
 
