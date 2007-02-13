@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - classes to create and decode mime messages
-Summary(pl.UTF-8):   %{_pearname} - klasa do tworzenia i dekodowania wiadomości mime
+Summary(pl.UTF-8):	%{_pearname} - klasa do tworzenia i dekodowania wiadomości mime
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
 Release:	5
