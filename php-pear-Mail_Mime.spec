@@ -6,13 +6,12 @@
 Summary:	%{_pearname} - classes to create and decode mime messages
 Summary(pl.UTF-8):	%{_pearname} - klasa do tworzenia i dekodowania wiadomości mime
 Name:		php-pear-%{_pearname}
-Version:	1.3.1
-Release:	5
+Version:	1.5.2
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0012fd2406597e60083bc4bce751cef2
-Patch0:		%{name}-variable-refs.patch
+# Source0-md5:	30b931f620d880782ee8d5e454b51fdf
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -49,7 +48,20 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
-%patch0 -p1
+
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -65,3 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*
 %{php_pear_dir}/data/%{_pearname}
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/%{_pearname}
