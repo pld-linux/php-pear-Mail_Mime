@@ -1,17 +1,15 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Mail
-%define		_subclass	Mime
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	Mail_Mime
 Summary:	%{_pearname} - classes to create and decode mime messages
 Summary(pl.UTF-8):	%{_pearname} - klasa do tworzenia i dekodowania wiadomości mime
 Name:		php-pear-%{_pearname}
-Version:	1.8.0
+Version:	1.8.1
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	549bcf3d9eb5111995293fded46c2ab9
+# Source0-md5:	cd3395dd4b602782ae65c7db1a48ca16
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -62,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*
+%{php_pear_dir}/Mail/*
 %{php_pear_dir}/data/%{_pearname}
