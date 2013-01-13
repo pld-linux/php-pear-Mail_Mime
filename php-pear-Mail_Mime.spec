@@ -1,19 +1,19 @@
+%define		status		stable
+%define		pearname	Mail_Mime
 %include	/usr/lib/rpm/macros.php
-%define		_status		stable
-%define		_pearname	Mail_Mime
-Summary:	%{_pearname} - classes to create and decode mime messages
-Summary(pl.UTF-8):	%{_pearname} - klasa do tworzenia i dekodowania wiadomości mime
-Name:		php-pear-%{_pearname}
-Version:	1.8.6
+Summary:	%{pearname} - classes to create and decode mime messages
+Summary(pl.UTF-8):	%{pearname} - klasa do tworzenia i dekodowania wiadomości mime
+Name:		php-pear-%{pearname}
+Version:	1.8.7
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	eb01f29b72e387bcaf201e84e44f2b7c
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	10aaf66d551b2e0b820be19100219511
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php(pcre)
 Requires:	php-pear
 Obsoletes:	php-pear-Mail_Mime-tests
@@ -32,7 +32,7 @@ messages:
 - xmail.xsl: An XSLT stylesheet to transform the output of the
   getXML() method.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Dostarcza klasy do tworzenia oraz manipulowania wiadomościami mime:
@@ -43,7 +43,7 @@ Dostarcza klasy do tworzenia oraz manipulowania wiadomościami mime:
 - xmail.dtd: XML DTD dla metody getXML() klasy dekodującej.
 - xmail.xsl: styl XSLT do transformowania wyjścia metody getXML().
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
