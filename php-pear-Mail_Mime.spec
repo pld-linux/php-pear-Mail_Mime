@@ -4,12 +4,12 @@
 Summary:	%{pearname} - classes to create and decode mime messages
 Summary(pl.UTF-8):	%{pearname} - klasa do tworzenia i dekodowania wiadomości mime
 Name:		php-pear-%{pearname}
-Version:	1.8.9
+Version:	1.10.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
-# Source0-md5:	75a89914b738781273d513d6cfd82827
+# Source0-md5:	9577c31e075956284c517ecb8a039bd4
 URL:		http://pear.php.net/package/Mail_Mime/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
