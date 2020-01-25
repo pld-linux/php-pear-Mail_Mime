@@ -1,5 +1,4 @@
 %define		pearname	Mail_Mime
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - classes to create and decode mime messages
 Summary(pl.UTF-8):	%{pearname} - klasa do tworzenia i dekodowania wiadomości mime
 Name:		php-pear-%{pearname}
