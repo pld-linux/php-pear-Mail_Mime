@@ -9,11 +9,13 @@ Group:		Development/Languages/PHP
 Source0:	https://pear.php.net/get/%{pearname}-%{version}.tgz
 # Source0-md5:	a26f4aa0c599f0a5341bab3994d46207
 URL:		https://pear.php.net/package/Mail_Mime/
+BuildRequires:	php(zlib)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php(mbstring)
 Requires:	php(pcre)
+Requires:	php(zlib)
 Requires:	php-pear
 Obsoletes:	php-pear-Mail_Mime-tests
 BuildArch:	noarch
